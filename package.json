@@ -1,0 +1,19 @@
+{
+  "name": "soyo-kaze.github.io",
+  "version": "1.0.0",
+  "description": "my site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyo-kaze/soyo-kaze.github.io.git"
+  },
+  "author": "Soyokaze-aka-sameer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyo-kaze/soyo-kaze.github.io/issues"
+  },
+  "homepage": "https://github.com/soyo-kaze/soyo-kaze.github.io#readme"
+}
