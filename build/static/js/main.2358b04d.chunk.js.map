@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["render","App","document","getElementById"],"mappings":"gIAAA,8BAGAA,iBAAO,cAACC,IAAD,IAAOC,SAASC,eAAe,W","file":"static/js/main.2358b04d.chunk.js","sourcesContent":["import React from 'react'\r\nimport {render} from 'react-dom'\r\n\r\nrender(<App/>,document.getElementById(\"root\"))\r\n\r\n"],"sourceRoot":""}
