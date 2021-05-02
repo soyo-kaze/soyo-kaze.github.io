@@ -1,2 +1,0 @@
-(this["webpackJsonpsoyo-kaze.github.io"]=this["webpackJsonpsoyo-kaze.github.io"]||[]).push([[0],{4:function(e,t,o){"use strict";o.r(t);o(0);var s=o(2),i=o(3);Object(s.render)(Object(i.jsx)(App,{}),document.getElementById("root"))}},[[4,1,2]]]);
-//# sourceMappingURL=main.2358b04d.chunk.js.map
