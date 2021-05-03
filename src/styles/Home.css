@@ -26,9 +26,18 @@
 	width:300px;
 	border-radius:50%;
 }
+.tabs{
+	justify-content: center;
+    align-items:baseline;
+	padding-left:10%;
+}
 @media screen and (max-width: 750px){
 	.home__main{
-
 		flex-direction: column;
+		height:100%;
+	}
+	.tabs{
+		margin-top:20px;
+		padding-left:35%;
 	}
 }
