@@ -1,0 +1,28 @@
+.footer__main{
+	background-color: rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	height:50px;
+	width:100%;
+	font-family:google;
+	font-size:15px;
+	color:grey;
+}
+.footer__main>p{
+	margin:0px;
+}
+.heart{
+	object-fit: contain;
+	height:20px;
+	margin:5px;
+	animation: heart__beat infinite 0.5s alternate;
+}
+@keyframes heart__beat{
+	from{
+		height: 15px; 
+	}
+	to{
+		height: 20px;
+	}
+}
