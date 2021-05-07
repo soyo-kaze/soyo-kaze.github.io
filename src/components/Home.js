@@ -9,6 +9,8 @@ import linkedin from '../assets/linkedin.png';
 import twitter from '../assets/twitter.png';
 import medium from '../assets/Medium.png';
 import Tabs from './Tabs';
+import resume from '../assets/resume.pdf';
+
 //import {Row,Col} from 'react-bootstrap';
 //import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -54,6 +56,7 @@ const Home = () =>{
 							<img src={dp} alt="my_image"/>
 						</span>
 						<p>Sameer Saini</p>
+						<a href={resume} target="__blank"><button className="resume__link">Resume</button></a>
 					</span>
 					<span className="my__info tabs">
 						{linksArray.map(({img,link,tag}) => <Tabs image={img} link={link} tag={tag}/>)}

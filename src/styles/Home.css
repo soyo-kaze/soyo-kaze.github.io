@@ -31,13 +31,30 @@
     align-items:baseline;
 	padding-left:10%;
 }
+.resume__link{
+	padding: 7px 12px 7px 12px;
+	border-radius: 5px;
+	background-color: #098ee0;
+	color: white;
+	font-size: 15px;
+	border:0px solid;
+	cursor:pointer;
+	transition:0.2s ease-out;
+}
+.resume__link:hover{
+	background-color: #077fca;
+	font-size: 17px;
+}
+p{
+	margin-bottom:7px;
+}
 @media screen and (max-width: 750px){
 	.home__main{
 		flex-direction: column;
 		height:100%;
 	}
 	.tabs{
-		margin-top:20px;
+		margin-top:40px;
 		padding-left:35%;
 	}
 }
