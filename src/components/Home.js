@@ -1,13 +1,14 @@
 import React from "react";
 import dp from "../assets/pic.png";
 import bmc from "../assets/bmc.png";
-import twitch from "../assets/twitch.webp";
+import twitch from "../assets/twitch-tile.svg";
 import github from "../assets/github.png";
 import youtube from "../assets/youtube.png";
 import linkedin from "../assets/linkedin.png";
-import twitter from "../assets/twitter.png";
-import medium from "../assets/Medium.png";
+import twitter from "../assets/twitter-tile.svg";
+import medium from "../assets/medium-tile.svg";
 import resume from "../assets/resume.pdf";
+import yt from "../assets/youtube-icon.svg";
 
 //import {Row,Col} from 'react-bootstrap';
 //import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -30,7 +31,7 @@ const Home = () => {
       tag: "LinkedIn",
     },
     {
-      img: youtube,
+      img: yt,
       link: "https://youtube.com/c/smgenz",
       tag: "Youtube",
     },
@@ -50,19 +51,19 @@ const Home = () => {
     <>
       <div className="w-full h-l flex pl-10 pr-10 flex-col md items-center justify-center space-x-0 sm:flex-row sm:space-x-24">
         <span>
-          <img src={dp} alt="my pic" className="object-contain h-80" />
+          <img src={dp} alt="my pic" className="object-contain h-m" />
         </span>
         <span>
-          <p className="font-sans font-bold text-7xl">I'm Sameer saini</p>
-          <p className="font-sans text-lg mt-2 font-medium text-gray-600">
+          <p className="font-ubuntu font-bold text-7xl">I'm Sameer saini</p>
+          <p className="font-ubuntu text-lg mt-2 font-medium text-gray-600">
             Developer 🕸 | ReactJS ⚛ | Gamer 🎮
           </p>
           <span className="flex items-center space-x-4 ">
             {linksArray.map((a) => (
-              <a href={a.link}>
+              <a href={a.link} target="_blank">
                 <img
                   src={a.img}
-                  className="object-contain h-9 rounded-lg mt-4  hover:mt-3 transform duration-200 ease-out grayscale-50 opacity-70 hover:opacity-100 hover:filter-none hover:h-10"
+                  className="object-contain h-9 rounded-lg mt-8 filter  hover:mt-3 transform duration-200 ease-out grayscale opacity-25 hover:opacity-100 hover:filter-none hover:h-10"
                 />
               </a>
             ))}

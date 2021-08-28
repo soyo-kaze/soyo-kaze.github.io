@@ -2,10 +2,14 @@
   font-family: "google";
   src: url(https://fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);
 }
+@font-face {
+  font-family: "ubuntu";
+  src: url("../assets/fonts/ubuntu/Ubuntu-Regular.ttf");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .header__text {
-  @apply font-sans font-semibold p-2 hover:text-white hover:bg-gray-900 rounded-xl cursor-pointer transform duration-200 ease-out;
+  @apply font-ubuntu font-normal p-2 hover:text-white hover:bg-gray-800 cursor-pointer transform duration-200 ease-out;
 }
