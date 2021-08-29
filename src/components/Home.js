@@ -9,6 +9,7 @@ import twitter from "../assets/twitter-tile.svg";
 import medium from "../assets/medium-tile.svg";
 import resume from "../assets/resume.pdf";
 import yt from "../assets/youtube-icon.svg";
+import dwnArr from "../assets/arrow.png";
 
 //import {Row,Col} from 'react-bootstrap';
 //import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -49,7 +50,7 @@ const Home = () => {
   console.log("hello");
   return (
     <>
-      <div className="w-full h-l flex pl-10 pr-10 flex-col md items-center justify-center space-x-0 sm:flex-row sm:space-x-24">
+      <div className="w-full h-full flex pl-10 pr-10 flex-col md items-center justify-center space-x-0 sm:flex-row sm:space-x-24">
         <span>
           <img src={dp} alt="my pic" className="object-contain h-m" />
         </span>
@@ -70,6 +71,13 @@ const Home = () => {
           </span>
         </span>
       </div>
+      <span className="w-full flex items-center justify-center mt-6">
+        <img
+          src={dwnArr}
+          alt="down arrow"
+          className="object-contain h-32 ani_arr cursor-pointer"
+        />
+      </span>
     </>
   );
 };

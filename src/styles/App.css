@@ -13,3 +13,20 @@
 .header__text {
   @apply font-ubuntu font-normal p-2 hover:text-white hover:bg-gray-800 cursor-pointer transform duration-200 ease-out;
 }
+
+.ani_arr:hover {
+  animation: text-load ease-in-out 2000ms infinite;
+  transform: translateY(0px);
+}
+
+@keyframes text-load {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
