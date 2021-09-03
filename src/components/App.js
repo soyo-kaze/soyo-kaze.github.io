@@ -5,6 +5,7 @@ import Home from "./Home.js";
 import Footer from "./Footer.js";
 import Header from "./Header";
 import About from "./About";
+import Tech from "./Tech";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route exact path="/">
           <Home />
           <About />
+          <Tech />
         </Route>
       </Switch>
       <Footer />

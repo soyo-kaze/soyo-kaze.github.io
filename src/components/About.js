@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         id="about"
-        className="pl-10 pr-10 pt-10 sm:pl-44 sm:pr-44 mt-10 flex flex-col sm:flex-row sm:items-center bg-gray-200"
+        className="container_div flex flex-col sm:flex-row sm:items-center bg-gray-200 border_round"
       >
         <span className="sm:pr-20 sm:w-3/4">
           <p className="upper_header">Who Am I?</p>

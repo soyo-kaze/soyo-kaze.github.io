@@ -37,3 +37,11 @@
 .about {
   @apply font-ubuntu text-base;
 }
+
+.border_round {
+  border-radius: 45%/10%;
+}
+
+.container_div {
+  @apply pl-10 pr-10 pb-14 pt-20 sm:pl-44 sm:pr-44 mt-10 mb-10;
+}
