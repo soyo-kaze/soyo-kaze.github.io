@@ -10,6 +10,7 @@ import medium from "../assets/medium-tile.svg";
 import resume from "../assets/resume.pdf";
 import yt from "../assets/youtube-icon.svg";
 import dwnArr from "../assets/arrow.png";
+import npmjs from "../assets/npmjs-icon.svg";
 
 //import {Row,Col} from 'react-bootstrap';
 //import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -46,6 +47,11 @@ const Home = () => {
       link: "https://medium.com/@soyokaze",
       tag: "Medium",
     },
+    {
+      img: npmjs,
+      link: "https://www.npmjs.com/~soyokaze",
+      tag: "NPM",
+    },
   ];
   console.log("hello");
   return (
@@ -71,13 +77,15 @@ const Home = () => {
           </span>
         </span>
       </div>
-      <span className="w-full flex items-center justify-center mt-6">
-        <img
-          src={dwnArr}
-          alt="down arrow"
-          className="object-contain h-32 ani_arr cursor-pointer"
-        />
-      </span>
+      <a href="#about">
+        <span className="w-full flex items-center justify-center mt-6">
+          <img
+            src={dwnArr}
+            alt="down arrow"
+            className="object-contain h-32 ani_arr cursor-pointer"
+          />
+        </span>
+      </a>
     </>
   );
 };

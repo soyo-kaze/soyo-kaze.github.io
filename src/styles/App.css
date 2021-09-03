@@ -30,3 +30,10 @@
     transform: translateY(0px);
   }
 }
+
+.upper_header {
+  @apply font-bold font-ubuntu text-gray-800 text-2xl;
+}
+.about {
+  @apply font-ubuntu text-base;
+}
