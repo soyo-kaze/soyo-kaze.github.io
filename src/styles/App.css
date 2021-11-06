@@ -39,9 +39,16 @@
 }
 
 .border_round {
-  border-radius: 45%/10%;
+  border-radius: 0 0 45% 45%/0 0 10% 10%;
 }
 
 .container_div {
   @apply pl-10 pr-10 pb-14 pt-20 sm:pl-44 sm:pr-44 mt-10 mb-10;
+}
+
+.wave_round {
+  aspect-ratio: 960/100;
+  width: 100%;
+  background: url("../assets/layerWave.svg") center center no-repeat;
+  background-size: cover;
 }

@@ -4,9 +4,10 @@ import dp from "../assets/pic.png";
 const About = () => {
   return (
     <>
+      <div className="wave_round"></div>
       <div
         id="about"
-        className="container_div flex flex-col sm:flex-row sm:items-center bg-gray-200 border_round shadow-xl"
+        className="pl-10 pr-10 pt-20 pb-14 sm:pl-44 sm:pt-0 sm:pr-44 m-0 flex flex-col sm:flex-row sm:items-center bg-gray-200 border_round shadow-xl"
       >
         <span className="sm:pr-20 sm:w-3/4">
           <p className="upper_header">Who Am I?</p>

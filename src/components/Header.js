@@ -5,8 +5,8 @@ const Header = () => {
     <>
       <div className="flex items-center justify-between w-full p-4 pl-6">
         <p className="font-ubuntu font-normal cursor-pointer">Soyokaze</p>
-        <span className="flex fixed z-20 w-full justify-center items-center">
-          <span className=" p-4 bg-yellow-400 -mt-6 shadow-xl rounded-b-xl font-ubuntu font-semibold">
+        <span className="flex z-20 fixed right-0 bottom-0 justify-center items-center">
+          <span className=" p-4 bg-yellow-400 m-6 shadow-xl rounded-xl font-ubuntu font-semibold">
             <p> 🚧Under Construction🚧</p>
           </span>
         </span>
