@@ -52,3 +52,7 @@
   background: url("../assets/layerWave.svg") center center no-repeat;
   background-size: cover;
 }
+
+.skill__img {
+  @apply h-24 cursor-pointer object-contain;
+}
