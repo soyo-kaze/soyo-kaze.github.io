@@ -16,18 +16,31 @@ const lower = [python, react, github, frame1, frame];
 
 const Modal = ({ imgSrc }) => {
   const [modal, setModal] = useState(true);
-  const handleClose = () => setModal(true);
-  const handleShow = () => setModal(false);
-  // TODO: implement Animation on show and close
+  const [ani, setAni] = useState({ fadeIn: "", translate: "" });
+  const handleClose = () => {
+    setAni({ fadeIn: "fadeInRev", translate: "translateRev" });
+    setTimeout(() => setModal(true), 700);
+  };
+  const handleShow = () => {
+    setAni({ fadeIn: "fadeIn", translate: "translate" });
+    setModal(false);
+  };
   return (
     <div>
       <img src={imgSrc} className="skill__img" onClick={handleShow} />
       <div
-        className="fixed left-0 top-0 w-screen h-screen flex justify-center items-center bg-opacity-70 bg-black z-30 "
+        className={
+          "fixed left-0 top-0 w-screen h-screen flex justify-center items-center bg-opacity-70 bg-black z-30 " +
+          `animate-${ani.fadeIn}`
+        }
         style={{ display: `${modal ? "none" : "flex"}` }}
         onClick={handleClose}
       >
-        <span className="bg-white max-w-xl p-6 rounded-lg m-4">
+        <span
+          className={
+            "bg-white max-w-xl p-6 rounded-lg m-4 " + `animate-${ani.translate}`
+          }
+        >
           <h1 className="font-bold text-4xl text-center">Modal title</h1>
           <div className="mt-4 flex space-x-4 flex-col md:flex-row space-y-2 justify-center items-center">
             <img src={imgSrc} className="skill__img" onClick={handleShow} />
