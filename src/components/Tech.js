@@ -29,7 +29,7 @@ const Modal = ({ imgSrc }) => {
     <div>
       <div className="animate-translate "></div>
       <div className="animate-fadeInRev"></div>
-      <div className=" animate-translate "></div>
+      <div className=" animate-translateRev "></div>
       <div className="animate-fadeIn"></div>
       <img src={imgSrc} className="skill__img" onClick={handleShow} />
       <div
