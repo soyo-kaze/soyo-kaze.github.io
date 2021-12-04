@@ -27,6 +27,10 @@ const Modal = ({ imgSrc }) => {
   };
   return (
     <div>
+      <div className="animate-translate "></div>
+      <div className="animate-fadeInRev"></div>
+      <div className=" animate-translate "></div>
+      <div className="animate-fadeIn"></div>
       <img src={imgSrc} className="skill__img" onClick={handleShow} />
       <div
         className={
