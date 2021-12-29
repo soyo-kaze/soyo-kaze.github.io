@@ -11,10 +11,29 @@ import next from "../assets/New folder/some 1.svg";
 import frame1 from "../assets/New folder/Frame-1.svg";
 import frame from "../assets/New folder/Frame.svg";
 
-const upper = [mongodb, fire, next, postman, node, js];
-const lower = [python, react, github, frame1, frame];
+const upper = [
+  { img: mongodb, date: "Nov 2021", title: "MongoDB", exp: "<1", projects: 1 },
+  { img: fire, date: "Feb 2021", title: "Firebase", exp: "<1", projects: 1 },
+  { img: next, date: "Sep 2021", title: "NextJS", exp: "<1", projects: 2 },
+  { img: postman, date: "July 2021", title: "Postman", exp: "<1", projects: 1 },
+  { img: node, date: "Sep 2020", title: "NodeJs", exp: "1+", projects: 4 },
+  { img: js, date: "Sep 2020", title: "JavaScript", exp: "1+", projects: 4 },
+];
+const lower = [
+  { img: python, date: "Nov 2018", title: "Python", exp: "2+", projects: 4 },
+  { img: react, date: "Dec 2020", title: "ReactJS", exp: "1+", projects: 4 },
+  { img: node, date: "Sep 2018", title: "GitHub", exp: "2+", projects: 60 },
+  { img: frame1, date: "Mar 2021", title: "Travis-CI", exp: "1+", projects: 4 },
+  {
+    img: frame,
+    date: "Sep 2021",
+    title: "TailwindCSS",
+    exp: "<1",
+    projects: 4,
+  },
+];
 
-const Modal = ({ imgSrc }) => {
+const Modal = ({ imgSrc, title, exp, date, projects }) => {
   const [modal, setModal] = useState(true);
   const [ani, setAni] = useState({ fadeIn: "", translate: "" });
   const handleClose = () => {
@@ -45,16 +64,58 @@ const Modal = ({ imgSrc }) => {
             "bg-white max-w-xl p-6 rounded-lg m-4 " + `animate-${ani.translate}`
           }
         >
-          <h1 className="font-bold text-4xl text-center">Modal title</h1>
-          <div className="mt-4 flex space-x-4 flex-col md:flex-row space-y-2 justify-center items-center">
+          <h1 className="font-bold text-4xl text-center">{title}</h1>
+          <div className="mt-4 flex space-x-4 flex-col md:flex-row space-y-2 justify-center items-center mb-4 font-ubuntu">
             <img src={imgSrc} className="skill__img" onClick={handleShow} />
-            <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              eleifend erat, quis rhoncus lectus. Maecenas mattis ante in
-              pulvinar venenatis. Ut vestibulum gravida quam, id porttitor
-              lectus posuere eu. Curabitur imperdiet porta ligula, quis iaculis
-              mi rhoncus vitae.
-            </p>
+            <div className="flex flex-col space-y-2 justify-end">
+              <span
+                id="started"
+                className="flex w-full justify-start items-center"
+              >
+                <div>Started on:</div>
+                <div
+                  className="p-[3px] bg-red-600 text-white font-semibold text-sm rounded-lg"
+                  style={{
+                    marginLeft: "4px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                  }}
+                >
+                  {date}
+                </div>
+              </span>
+              <span
+                id="experience"
+                className="flex w-full justify-start items-center"
+              >
+                <div>Exp:</div>
+                <div
+                  className="p-[3px] bg-blue-600 text-white font-semibold text-sm rounded-lg"
+                  style={{
+                    marginLeft: "4px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                  }}
+                >
+                  {exp} yrs
+                </div>
+              </span>
+              <span id="Project" className="flex justify-start items-center ">
+                <span>
+                  <p>Projects:</p>
+                </span>
+                <div
+                  className="font-semibold text-sm rounded-lg bg-green-600 p-[3px] text-white"
+                  style={{
+                    marginLeft: "4px",
+                    paddingLeft: "5px",
+                    paddingRight: "5px",
+                  }}
+                >
+                  {projects}
+                </div>
+              </span>
+            </div>
           </div>
           <div className="mt-4 flex w-full justify-center">
             <button
@@ -77,12 +138,24 @@ const Tech = () => {
         <p className="upper_header">What's in my Arsenal</p>
         <span className="flex md:flex-row space-y-4 md:space-y-0 flex-col justify-center w-full items-center md:space-x-10 space-x-0 mt-24 ">
           {upper.map((a) => (
-            <Modal imgSrc={a} />
+            <Modal
+              imgSrc={a.img}
+              title={a.title}
+              projects={a.projects}
+              exp={a.exp}
+              date={a.date}
+            />
           ))}
         </span>
         <span className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 w-full items-center md:space-x-10 space-x-0 md:mt-12 mt-0">
           {lower.map((a) => (
-            <Modal imgSrc={a} />
+            <Modal
+              imgSrc={a.img}
+              title={a.title}
+              projects={a.projects}
+              exp={a.exp}
+              date={a.date}
+            />
           ))}
         </span>
       </div>
