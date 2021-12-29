@@ -22,7 +22,7 @@ const upper = [
 const lower = [
   { img: python, date: "Nov 2018", title: "Python", exp: "2+", projects: 4 },
   { img: react, date: "Dec 2020", title: "ReactJS", exp: "1+", projects: 4 },
-  { img: node, date: "Sep 2018", title: "GitHub", exp: "2+", projects: 60 },
+  { img: github, date: "Sep 2018", title: "GitHub", exp: "2+", projects: 60 },
   { img: frame1, date: "Mar 2021", title: "Travis-CI", exp: "1+", projects: 4 },
   {
     img: frame,
