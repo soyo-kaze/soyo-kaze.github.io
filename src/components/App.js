@@ -6,6 +6,7 @@ import Footer from "./Footer.js";
 import Header from "./Header";
 import About from "./About";
 import Tech from "./Tech";
+import Blog from "./Blog";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Home />
           <About />
           <Tech />
+          <Blog />
         </Route>
       </Switch>
       <Footer />
