@@ -7,6 +7,7 @@ import Header from "./Header";
 import About from "./About";
 import Tech from "./Tech";
 import Blog from "./Blog";
+import Projects from "./Projects";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <About />
           <Tech />
           <Blog />
+          <Projects />
         </Route>
       </Switch>
       <Footer />
