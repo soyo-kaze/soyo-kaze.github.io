@@ -57,7 +57,10 @@ const BlogCard = ({ imgSrc, title, link, date }) => {
 const Blog = () => {
   const marid = document.querySelector("#marID");
   return (
-    <div className="flex flex-col mt-20 items-center justify-center container_div">
+    <div
+      id="blogs"
+      className="flex flex-col mt-20 items-center justify-center container_div"
+    >
       <p className="upper_header">Blogs</p>
       <div className="w-full flex flex-col justify-center items-center mt-10">
         {blogs.map((data) => (

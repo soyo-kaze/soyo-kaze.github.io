@@ -134,7 +134,10 @@ const Modal = ({ imgSrc, title, exp, date, projects }) => {
 const Tech = () => {
   return (
     <>
-      <div className="flex flex-col mt-20 items-center justify-center container_div">
+      <div
+        id="skills"
+        className="flex flex-col mt-20 items-center justify-center container_div"
+      >
         <p className="upper_header">What's in my Arsenal</p>
         <span className="flex md:flex-row space-y-4 md:space-y-0 flex-col justify-center w-full items-center md:space-x-10 space-x-0 mt-24 ">
           {upper.map((a) => (

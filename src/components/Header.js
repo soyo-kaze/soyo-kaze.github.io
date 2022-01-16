@@ -11,9 +11,15 @@ const Header = () => {
           </span>
         </span>
         <span className="flex space-x-4 border-2 border-gray-800 rounded shadow-lg">
-          <p className="header__text">Home</p>
-          <p className="header__text">Projects</p>
-          <p className="header__text">Services</p>
+          <a href="#skills" className="header__text">
+            Skills
+          </a>
+          <a href="#blogs" className="header__text">
+            Blogs
+          </a>
+          <a href="#projects" className="header__text">
+            Projects
+          </a>
         </span>
       </div>
     </>

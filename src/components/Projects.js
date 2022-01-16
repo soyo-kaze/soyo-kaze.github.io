@@ -78,7 +78,7 @@ const Builds = [
 
 const Projects = () => {
   return (
-    <>
+    <div id="projects">
       <p className="upper_header w-full flex justify-center">Projects</p>
       {Builds.map((data) => (
         <Build
@@ -91,7 +91,7 @@ const Projects = () => {
           live={data.live}
         />
       ))}
-    </>
+    </div>
   );
 };
 
