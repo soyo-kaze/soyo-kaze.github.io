@@ -40,7 +40,7 @@ module.exports = {
       // prettier-ignore
       fontFamily: {
       'ubuntu': ["ubuntu"],
-      'google': ["google"],
+      'google': ["google"],'sams': ["samsFont"],
     },
     },
   },

@@ -62,7 +62,7 @@ const Home = () => {
             <img src={dp} alt="my pic" className="object-contain h-m" />
           </span>
           <span>
-            <p className="font-ubuntu font-bold text-7xl">I'm Sameer saini</p>
+            <p className="font-sams font-bold text-7xl">I'm Sameer saini</p>
             <p className="font-ubuntu text-lg mt-2 font-medium text-gray-600">
               Developer 🕸 | ReactJS ⚛ | Gamer 🎮
             </p>

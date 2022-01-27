@@ -1,5 +1,5 @@
 import React from "react";
-import dp from "../assets/pic.png";
+import dp from "../assets/hero.png";
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </span>
         <span>
-          <img src="https://www.edten.com/site-new/images/improves-credibility-legitimacy-of-your-brand.png" />
+          <img className=" object-contain h-60" src={dp} />
         </span>
       </div>
     </>

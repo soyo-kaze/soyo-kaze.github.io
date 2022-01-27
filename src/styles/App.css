@@ -6,6 +6,10 @@
   font-family: "ubuntu";
   src: url("../assets/fonts/ubuntu/Ubuntu-Regular.ttf");
 }
+@font-face {
+  font-family: "samsFont";
+  src: url("../assets/fonts/Samsfont-Regular.ttf");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,4 +59,8 @@
 
 .skill__img {
   @apply h-24 cursor-pointer object-contain;
+}
+
+.roundness {
+  border-radius: 40px 0 0 45px/10px 10px 10px 10px;
 }
