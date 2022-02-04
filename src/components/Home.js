@@ -34,7 +34,7 @@ const Home = () => {
     },
     {
       img: yt,
-      link: "https://youtube.com/c/smgenz",
+      link: "https://www.youtube.com/channel/UCOgDlcTV3AjbkAza9Otg_pg",
       tag: "Youtube",
     },
     {
