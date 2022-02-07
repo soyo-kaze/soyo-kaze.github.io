@@ -10,6 +10,7 @@ const Header = () => {
             <p> 🚧Under Construction🚧</p>
           </span>
         </span> */}
+
         <span className="flex space-x-4 border-2 border-gray-800 rounded shadow-lg">
           <a href="#skills" className="header__text">
             Skills
