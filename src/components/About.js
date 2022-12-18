@@ -14,8 +14,7 @@ const About = () => {
           <hr className="w-1/6" />
           <br></br>
           <p className="about">
-            I am a senior undergrad at BKBIET, Pilani, persuing my B.Tech in
-            Computer Science. Former{" "}
+            I am a Frontend developer. Former{" "}
             <strong>Google Developer Student Club lead</strong>. I develop Web
             Apps in <strong>ReactJS⚛</strong>, Code in JavaScript and Python.
             Learning my way to become a <strong>Fullstack Web Dev.</strong>
